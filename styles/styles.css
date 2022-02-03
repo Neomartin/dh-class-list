@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;700&family=Poppins:wght@300;400;600;800&family=Roboto:wght@100;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .class-list {
     font-size: 2rem;
     padding: 1rem;
-    text-align: center;
     width: 100%;
+}
+
+.class-list-title {
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: 500;
 }
