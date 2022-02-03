@@ -29,17 +29,19 @@ body {
     list-style-type: none;
     padding: 0;
 }
-.sidebar ul li {
+.sidebar .sidebar-item {
     padding: 1rem;
     border-bottom: 1px solid #e6e7e8;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
+.sidebar ul li:hover {
+    background-color: #e6e7e8;
+}
 
 .sidebar li a {
     text-decoration: none;
     color: black;
-    
 }
 
 .sidebar li.active {
@@ -47,4 +49,30 @@ body {
 }
 .sidebar li.active a {
     color: #cb1e40;
+}
+
+.ice-creams {
+    width: 	100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-size: .675rem;
+    gap: 1rem;
+}
+
+.ice-cream-flavor {
+    padding: .5rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    border: 1px solid transparent;
+}
+.ice-cream-flavor:hover {
+    background-color: #fce1e7;
+    cursor: pointer;
+    border: 1px solid #cb1e40;
+}
+.ice-cream-flavor.active {
+    background-color: #cb1e40;
+    color: white;
+    border-color: #ec7992;
 }
