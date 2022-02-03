@@ -10,13 +10,41 @@ body {
 }
 
 .class-list {
-    font-size: 2rem;
     padding: 1rem;
     width: 100%;
 }
 
 .class-list-title {
+    font-size: 2rem;
     text-align: center;
     border-bottom: 1px solid #DDDDDD;
     font-weight: 500;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 1rem;
+    border-bottom: 1px solid #e6e7e8;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.sidebar li.active {
+    background-color: #33383c;
+}
+.sidebar li.active a {
+    color: #cb1e40;
 }
